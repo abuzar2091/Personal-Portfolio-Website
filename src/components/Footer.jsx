@@ -9,7 +9,7 @@ function Footer() {
             <img src="/social-media/insta.png" className="h-8 hover:opacity-50"/>
            </Link >
            <Link href={"https://www.instagram.com/abuzar.ali_/"}>
-            <img src="/social-media/facebook1.png" className="h-8 hover:opacity-50"/>
+            <img src="/social-media/facebook.png" className="h-8 hover:opacity-50"/>
            </Link>
            <Link href={"https://www.instagram.com/abuzar.ali_/"}>
             <img src="/social-media/twitter.png" className="h-8 hover:opacity-50"/>
@@ -18,7 +18,7 @@ function Footer() {
             <img src="/social-media/linkedin.png" className="h-8 hover:opacity-50"/>
            </Link>
            <Link href={"https://github.com/abuzar2091"}>
-            <img src="/social-media/github1.png" className="h-9 hover:opacity-50"/>
+            <img src="/social-media/github.png" className="h-9 hover:opacity-50"/>
            </Link>
            </div>
            <div className="flex text-white text-md font-semibold">

@@ -4,7 +4,7 @@ import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { AboutMeLampEffect } from "./ui/lamp-effect";
-import Loader from "./Loader";
+
 
 export function AboutMe() {
   const [activeCard, setActiveCard] = React.useState(0);
@@ -14,7 +14,7 @@ export function AboutMe() {
     "var(--neutral-900)",
   ];
   return (
-    <motion.div
+    <motion.div id="about-me"
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
@@ -24,10 +24,8 @@ export function AboutMe() {
         <h1 className="mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 text-center mb-8 ">
           About me
         </h1>
-        <AboutMeLampEffect/>
-   
+        <AboutMeLampEffect />
       </div>
-    
     </motion.div>
   );
 }

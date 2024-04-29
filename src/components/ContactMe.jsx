@@ -57,7 +57,7 @@ try {
 }
   };
   return (
-    <div className="" >
+    <div id="contact-me" >
       <div className="relative h-[54rem] overflow-hidden flex flex-col items-center justify-center ">
         <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center mb-48 pb-24">
           <h2 className="text-2xl md:text-4xl lg:text-5xl text-white font-bold text-center mb-4">

@@ -1,23 +1,51 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
+import Typewriter, { TypewriterEffect, TypewriterEffectSmooth } from "./ui/Typewriter-effect.jsx";
+
 
 function HeroSection() {
+  const words = [
+    {
+      text: "And",
+    },
+    {
+      text: "I'm",
+    },
+    {
+      text: "a",
+    },
+    {
+      text: "Full ",
+    },
+    {
+      text: "Stack",
+    },
+    {
+      text: "Web",
+    },
+    {
+      text: "Developer",
+      className: "text-blue-500 dark:text-teal-600",
+    },
+    
+  ];
   return (
-    <div className="flex w-full pt-20">
+    <div id="home" className="flex w-full pt-20">
       <Spotlight className="top-40 left-80" fill="white" />
       <div className="flex w-full p-32  relative z-10   justify-between">
         <div className="w-[70%]">
           <p className=" text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Hi, I am{" "}
           </p>
+          
           <p className="mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Abuzar
           </p>
-          <p className="mt-20 md:mt-0 text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400  ">
+          
+          <TypewriterEffect words={words} />
+         
           {/* text-teal-300 */}
-           And I'm a Full Stack Web Developer
-          </p>
           <div className="flex gap-16 mt-12">
           <Button
         borderRadius="1.75rem"

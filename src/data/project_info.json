@@ -1,0 +1,25 @@
+{
+    "projects":
+    [
+        {
+          "title": "Snapgram",
+          "description": "Snapgram is a clone of Instagram. The frontend is built using React.js, leveraging modern tools such as React Hooks, React Query, and React Hook Form for  form handling. The backend is powered by Appwrite, a serverless backend-as-a-service platform, providing authentication, database, file storage, and more. Users can upload photos, follow other users, like and comment on posts.",
+          "image": "/project/snapgram.png",
+          "githubLink": "https://github.com/abuzar2091/Snapgram"
+        },
+        {
+          "title": "YouTube Clone",
+          "description": "YouTube Clone is a replica of the popular video-sharing platform. The frontend is built using React.js, providing a responsive and interactive user interface. The backend is powered by Node.js and Express.js, with MongoDB as the database, enabling robust data storage and retrieval. Users can create channels, upload, delete, and update videos, as well as like, comment, and share videos. Additionally, users can engage in community posts, fostering interaction and engagement within the platform.",
+          "image": "/project/youtube.png",
+          "githubLink": "https://github.com/abuzar2091/Youtube-Fullstack-Clone"
+        },
+        {
+          "title": "Airbnb Clone",
+          "description": "Airbnb Clone is a replica of the popular accommodation booking platform. The frontend is built using EJS (Embedded JavaScript) templating for server-side rendering, providing dynamic content generation. The backend is powered by Node.js and Express.js, with MongoDB as the database. Users can search for listings, view details of listings, book accommodations, and leave reviews, simulating the functionalities of the original Airbnb platform.",
+          "image": "/project/airbnb.png",
+          "githubLink": "https://github.com/abuzar2091/Airbnb"
+        }
+      ]
+      
+  }
+  

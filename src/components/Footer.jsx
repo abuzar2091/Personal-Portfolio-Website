@@ -34,11 +34,12 @@ function Footer() {
            </div>
            <div className="flex text-white text-md font-semibold">
         
-            <ul className="flex  justify-center items-center gap-10">
+            <ul className="flex  justify-center items-center gap-10
+           ">
               <li>
                 <Link
                   href="#home"
-                  className="hover:text-white transition-colors duration-300"
+                  className="hover:opacity-50 transition-colors duration-300"
                 >
                   Home
                 </Link>
@@ -46,7 +47,7 @@ function Footer() {
               <li>
                 <Link
                   href="#about-me"
-                  className="hover:text-white transition-colors duration-300"
+                  className="hover:opacity-50 transition-colors duration-300"
                 >
                   About
                 </Link>
@@ -54,7 +55,7 @@ function Footer() {
               <li>
                 <Link
                   href="#services"
-                  className="hover:text-white transition-colors duration-300"
+                  className="hover:opacity-50 transition-colors duration-300"
                 >
                   Services
                 </Link>
@@ -62,7 +63,7 @@ function Footer() {
               <li>
                 <Link
                   href="#contact-me"
-                  className="hover:text-white transition-colors duration-300"
+                  className="hover:opacity-50 transition-colors duration-300"
                 >
                   Contact me
                 </Link>

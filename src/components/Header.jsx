@@ -9,12 +9,12 @@ function Navbar({ className }) {
   return (
     <div 
       className={cn(
-        "fixed  top-10 inset-x-0 max-w-2xl mx-auto z-50 ",
+        "fixed  top-10 inset-x-0 max-w-2xl mx-auto z-50  ",
         className
       )}
     >
       <Menu setActive={setActive}>
-        <Link href={"#home"}>
+        <Link href={"#home"} className="hover:opacity-50">
           <MenuItem
             setActive={setActive}
             active={active}
@@ -22,18 +22,18 @@ function Navbar({ className }) {
           ></MenuItem>
         </Link>
        
-        <Link href={"#about-me"}>
+        <Link href={"#about-me"} className="hover:opacity-50">
           <MenuItem setActive={setActive} active={active} item="About me">
           </MenuItem>
         </Link>
-        <Link href={"#services"}>
+        <Link href={"#services"} className="hover:opacity-50">
           <MenuItem
             setActive={setActive}
             active={active}
             item="Services"
           ></MenuItem>
         </Link>
-        <Link href={"#contact-me"}>
+        <Link href={"#contact-me"} className="hover:opacity-50">
           <MenuItem
             setActive={setActive}
             active={active}

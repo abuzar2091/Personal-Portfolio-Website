@@ -159,7 +159,7 @@ try {
                   }
                 />
                 <label className="text-base md:text-md text-white text-center ml-2">
-                  i want you to work on a project with me
+                  I want you to work on a project with me
                 </label>
               </div>
               <button className=" mt-4 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-lg py-2 px-6 ">

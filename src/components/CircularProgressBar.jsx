@@ -5,7 +5,9 @@ import { CircularProgress, Card, CardBody } from "@nextui-org/react";
 import { useInView } from "react-intersection-observer";
 export default function CircularProgressBar({ percentage }) {
   const [progress, setProgress] = useState(0);
-  const {ref,inView } = useInView();
+  const {ref,inView } = useInView({
+    threshold: 0.5,
+  });
 
 
   useEffect(() => {

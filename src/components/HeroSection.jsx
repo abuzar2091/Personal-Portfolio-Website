@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
 import  { TypewriterEffect } from "./ui/Typewriter-effect.jsx";
 import Image from "next/image";
+import Link from "next/link";
 
 
 function HeroSection() {
@@ -48,20 +49,31 @@ function HeroSection() {
          
           {/* text-teal-300 */}
           <div className="flex gap-16 mt-12">
+            <Link href={"https://res.cloudinary.com/dbjhis6v2/image/upload/personal-portfolio/ko9hdc7dbemuhcxw960q.jpg"}>
+            
           <Button
         borderRadius="1.75rem"
         duration={3000}
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 text-[17px]"
+        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200
+         dark:border-slate-800 text-[17px]
+         hover:opacity-60
+         "
       >
        Open CV
       </Button>
+            </Link>
+      <Link href={"#contact-me"}>
       <Button
         borderRadius="1.75rem"
         duration={3000}
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 text-[17px]"
+        className="bg-white dark:bg-slate-900
+         text-black dark:text-white border-neutral-200
+          dark:border-slate-800 text-[17px]
+          hover:opacity-60"
       >
         Contact me
       </Button>
+      </Link>
 
           </div>
         </div>

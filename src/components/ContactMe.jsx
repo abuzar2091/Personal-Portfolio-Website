@@ -40,7 +40,7 @@ try {
         enquiry: "",
         phone: "",
         isChecked: false,
-      })
+      });
 } catch (error) {
  setSubmitForm(false);
   if (error.errors) {
@@ -105,7 +105,7 @@ try {
                   required
                 />
                 {errors.email && <p className="text-red-400">{errors.email}</p>}
-                <p className="text-sm ">We'll never share your email and phone with anyone else</p>
+                <p className="text-sm ">We&apos;ll never share your email and phone with anyone else</p>
               </div>
               <div className="flex flex-col mt-4">
                 <label htmlFor="enquiry">Enquiry</label>

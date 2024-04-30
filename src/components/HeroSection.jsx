@@ -1,7 +1,8 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
-import Typewriter, { TypewriterEffect, TypewriterEffectSmooth } from "./ui/Typewriter-effect.jsx";
+import  { TypewriterEffect } from "./ui/Typewriter-effect.jsx";
+import Image from "next/image";
 
 
 function HeroSection() {
@@ -66,7 +67,7 @@ function HeroSection() {
         </div>
         <div className="">
           <div className="border-4  rounded-full">
-          <img src="/abuzar-pic.jpg" className="rounded-full h-52 w-52" />
+          <Image src="/abuzar-pic.jpg" height={52} width={52}  alt="abuzarali" className="rounded-full h-52 w-52" />
           </div>
         </div>
       </div>

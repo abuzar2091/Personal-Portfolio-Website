@@ -16,17 +16,17 @@ export function AboutMeLampEffect() {
         }}
         className="mt-8 w-[80%] bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center font-medium tracking-tight text-transparent "
       >
-        Hello there! I'm Abuzar, currently on the exhilarating journey of
+        Hello there! I&apos;m Abuzar, currently on the exhilarating journey of
           pursuing a B.Tech in Computer Engineering from NIT Kurukshetra. As a
           passionate full-stack web developer, I immerse myself in the dynamic
           world of technology, specializing in the versatile MERN stack.
         
        <br/>
-          I'm always excited to learn new stuff, especially when it comes to
-          technology. I'm the kind of person who can handle a bunch of tasks
-          without breaking a sweat, and I'm really good at managing my time.
+          I&apos;m always excited to learn new stuff, especially when it comes to
+          technology. I&apos;m the kind of person who can handle a bunch of tasks
+          without breaking a sweat, and I&apos;m really good at managing my time.
           <br />
-          I'm full of energy and always looking for ways to learn and grow. I
+          I&apos;m full of energy and always looking for ways to learn and grow. I
           love coming up with new ideas and trying them out. And even though I
           take my work seriously, I also know how to have a good laugh!
       </motion.h1>

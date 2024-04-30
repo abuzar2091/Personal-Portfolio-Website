@@ -44,7 +44,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card className={"flex"}>
-            <Image src={item.url} height={80} width={80}
+            <Image src={item.url} alt="company-logo" height={80} width={80}
             className="rounded-full"/>
             <CardTitle>{item.name}</CardTitle>
             <CardTitle className={"mt-0 text-base font-normal"}>{item.role}</CardTitle>

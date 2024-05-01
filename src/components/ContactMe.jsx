@@ -162,7 +162,7 @@ try {
                   I want you to work on a project with me
                 </label>
               </div>
-              <button className=" mt-4 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-lg py-2 px-6 ">
+              <button className=" mt-4 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-lg py-2 px-6 hover:opacity-70 ">
                { !submitform?"Submit":"Submitting..."}
               </button>
             </form>

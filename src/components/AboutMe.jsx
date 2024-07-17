@@ -18,10 +18,10 @@ export function AboutMe() {
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className=" flex flex-col justify-center relative space-x-10 rounded-md p-10"
+      className="flex flex-col justify-center relative space-x-10 rounded-md p-10"
     >
       <div>
-        <h1 className="mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 text-center mb-8 ">
+        <h1 className="mt-10 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 text-center sm:mb-8 ">
           About me
         </h1>
         <AboutMeLampEffect />

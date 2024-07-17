@@ -47,6 +47,16 @@ module.exports = {
   ],
   darkMode: "class",  
   theme: {
+    screens: {
+      
+      xxs:'20px',
+      xs:'340px',
+      sm:'520px',
+      md: '640px',
+      lg: '768px',
+      xl:'1024px'
+      
+    },
     extend: {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

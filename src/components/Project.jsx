@@ -4,6 +4,7 @@ import React from "react";
 import projectData from "../data/project_info.json";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Image from "next/image";
+
 function Project() {
   const featuredProjects = projectData.projects;
 
@@ -21,7 +22,7 @@ function Project() {
         </h1>
       </div>
       <div className="mt-10 mx-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 justify-center">
           {featuredProjects.map((project) => (
             <div key={project.id} className="flex justify-center">
               <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">

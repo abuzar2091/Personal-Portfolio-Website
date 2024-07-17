@@ -21,7 +21,7 @@ const content = [
           src="/html.png"
           width={150}
           height={150}
-          className="object-cover"
+          className="object-cover sm:150 sm:w-150 w-70 h-70"
           alt="linear board demo"
         />
       </div>
@@ -40,7 +40,7 @@ const content = [
           src="/tailwindcss.png"
           width={150}
           height={150}
-          className="object-cover"
+          className="object-cover sm:150 sm:w-150 w-70 h-70"
           alt="linear board demo"
         />
       </div>
@@ -59,7 +59,7 @@ const content = [
           src="/javascript.png"
           width={150}
           height={150}
-          className="object-cover"
+          className="object-cover sm:150 sm:w-150 w-70 h-70"
           alt="linear board demo"
         />
       </div>
@@ -78,7 +78,7 @@ const content = [
           src="/reactjs.png"
           width={150}
           height={150}
-          className="object-cover"
+          className="object-cover sm:150 sm:w-150 w-70 h-70"
           alt="linear board demo"
         />
       </div>
@@ -97,7 +97,7 @@ const content = [
           src="/nextjs.png"
           width={100}
           height={80}
-          className="object-cover"
+          className="object-cover sm:150 sm:w-150 w-70 h-70"
           alt="linear board demo"
         />
         <Image
@@ -123,7 +123,7 @@ const content = [
           src="/css.png"
           width={150}
           height={150}
-          className="object-cover"
+          className="object-cover sm:150 sm:w-150 w-70 h-70"
           alt="linear board demo"
         />
       </div>
@@ -158,36 +158,37 @@ export function MySkills() {
           <h1 className="mt-10  text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 text-center mb-8">
             More Skills
           </h1>
-          <div className="flex flex-wrap gap-4">
-            <div className="bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 w-[30%]">
+          {/* flex flex-wrap */}
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
+            <div className="bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 ">
               <p>MongoDB</p>
               <LinearProgress percentage={70} />
            
             </div>
 
-            <div className=" relative bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 w-[30%]">
+            <div className=" relative bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4">
               <p>TypeScript</p>
               <LinearProgress percentage={80} />
            
             </div>
-            <div className=" relative bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 w-[30%]">
+            <div className=" relative bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 ">
               <p>Java</p>
               <LinearProgress percentage={50} />
              
             </div>
 
-            <div className=" relative bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 w-[30%]">
+            <div className=" relative bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 ">
               <p>C++</p>
               <LinearProgress percentage={80} />
              
             </div>
-            <div className="  bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 w-[30%]">
+            <div className="  bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 ">
               <p>OOPs</p>
             </div>
-            <div className=" bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 w-[30%]">
+            <div className=" bg-gradient-to-br from-teal-500 to-cyan-500  rounded-md p-4 ">
               <p>Data Structure And Algorithms</p>
             </div>
-            <div className="  bg-gradient-to-br from-teal-500 to-cyan-500 rounded-md p-4 w-[30%]">
+            <div className="  bg-gradient-to-br from-teal-500 to-cyan-500 rounded-md p-4 ">
               <p>Git and GitHub</p>
             </div>
           </div>

@@ -17,7 +17,7 @@ function ContactMe() {
   const [errors, setErrors] = useState({});
   const handleSubmit = async(e) => {
     e.preventDefault();
-try {
+      try {
       setSubmitForm(true);
       formValidationSchema.parse(formData);
       console.log(formData);
@@ -44,7 +44,6 @@ try {
 } catch (error) {
  setSubmitForm(false);
   if (error.errors) {
-
     const newErrors = {};
     error.errors.forEach((err) => {
       newErrors[err.path[0]] = err.message;
@@ -59,23 +58,23 @@ try {
   return (
     <div id="contact-me" >
       <div className="relative h-[54rem] overflow-hidden flex flex-col items-center justify-center ">
-        <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center mb-48 pb-24">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl text-white font-bold text-center mb-4">
+        <WavyBackground className="w-full  mx-auto flex flex-col items-center justify-center sm:mb-48 sm:pb-24">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl text-white font-bold text-center my-4">
             Contact me
           </h2>
           <p className="text-base md:text-xl text-white text-center mb-4">
             Contact me for work/general Enquiries
           </p>
-          <div className="min-w-[500px] text-center">
+          <div className="sm:min-w-[500px] text-center">
             <form onSubmit={handleSubmit}>
-              <div className="flex flex-col  ">
+              <div className="flex flex-col">
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
                   value={formData.name}
-                  className="border-2 border-black text-black rounded-md px-8 py-2"
+                  className="border-2 border-black text-black rounded-md py-2 px-8"
                   placeholder="Enter Your Name"
                   onChange={(e) =>
                     setFormData({
@@ -114,7 +113,7 @@ try {
                   name="enquiry"
                   id="enquiry"
                   value={formData.enquiry}
-                  className="border-2 border-black text-black rounded-md px-8 py-2"
+                  className="border-2 border-black text-black rounded-md px-8 py-2 "
                   placeholder="Enter Your Query"
                   onChange={(e) =>
                     setFormData({
@@ -133,7 +132,7 @@ try {
                   name="phone"
                   id="phone"
                   value={formData.phone}
-                  className="border-2 border-black  text-black rounded-md px-8 py-2"
+                  className="border-2 border-black  text-black rounded-md px-8 py-2  pl-12"
                   placeholder="Enter Your Phone Number"
                   onChange={(e) =>
                     setFormData({

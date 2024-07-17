@@ -1,10 +1,9 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
-import  { TypewriterEffect } from "./ui/Typewriter-effect.jsx";
+import { TypewriterEffect } from "./ui/Typewriter-effect.jsx";
 import Image from "next/image";
 import Link from "next/link";
-
 
 function HeroSection() {
   const words = [
@@ -30,56 +29,63 @@ function HeroSection() {
       text: "Developer",
       className: "text-blue-500 dark:text-teal-600",
     },
-    
   ];
   return (
     <div id="home" className="flex w-full pt-20">
-      <Spotlight className="top-40 left-80" fill="white" />
-      <div className="flex w-full p-32  relative z-10   justify-between">
-        <div className="w-[70%]">
-          <p className=" text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+      <Spotlight className="lg:top-40 lg:left-80 left-50" fill="white" />
+      <div className="flex w-full md:px-22 sm:px-16  px-5 py-32 relative z-10   justify-between">
+        <div className="sm:w-[70%] w-[60%]">
+          <p className="text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Hi, I am{" "}
           </p>
-          
-          <p className="mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+
+          <p className="mt-2 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Abuzar
           </p>
-          
+
           <TypewriterEffect words={words} />
-         
+
           {/* text-teal-300 */}
-          <div className="flex gap-16 mt-12">
-            <Link href={"https://res.cloudinary.com/dbjhis6v2/image/upload/personal-portfolio/ko9hdc7dbemuhcxw960q.jpg"}>
-            
-          <Button
-        borderRadius="1.75rem"
-        duration={3000}
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200
+          <div className="flex  gap-6 sm:gap-16 mt-16">
+            <Link
+              href={
+                "https://res.cloudinary.com/dbjhis6v2/image/upload/personal-portfolio/ko9hdc7dbemuhcxw960q.jpg"
+              }
+            >
+              <Button
+                borderRadius="1.75rem"
+                duration={3000}
+                className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200
          dark:border-slate-800 text-[17px]
          hover:opacity-60
          "
-      >
-       Open CV
-      </Button>
+              >
+                Open CV
+              </Button>
             </Link>
-      <Link href={"#contact-me"}>
-      <Button
-        borderRadius="1.75rem"
-        duration={3000}
-        className="bg-white dark:bg-slate-900
+            <Link href={"#contact-me"}>
+              <Button
+                borderRadius="1.75rem"
+                duration={3000}
+                className="bg-white dark:bg-slate-900
          text-black dark:text-white border-neutral-200
           dark:border-slate-800 text-[17px]
           hover:opacity-60"
-      >
-        Contact me
-      </Button>
-      </Link>
-
+              >
+                Contact me
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="">
           <div className="border-4  rounded-full">
-          <Image src="/abuzar-pic.jpg" height={52} width={52}  alt="abuzarali" className="rounded-full h-52 w-52" />
+            <Image
+              src="/abuzar-pic.jpg"
+              height={52}
+              width={52}
+              alt="abuzarali"
+              className="rounded-full md:h-52 md:w-52 w-40 h-32"
+            />
           </div>
         </div>
       </div>

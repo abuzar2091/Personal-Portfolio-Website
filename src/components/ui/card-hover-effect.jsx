@@ -13,10 +13,12 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        " py-10 grid lg:grid-cols-3 md:grid-cols-2 ",
         className
       )}
-      style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',height:'500px' }}
+      // style={{ display: 'grid', justifyContent: 'center', alignItems: 'center',
+      //   height:'500px' 
+      //   }}
     >
       {items.map((item, idx) => (
         <Link
@@ -43,7 +45,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className={"flex"}>
+          <Card className={"flex w-[100%]"}>
             <Image src={item.url} alt="company-logo" height={80} width={80}
             className="rounded-full"/>
             <CardTitle>{item.name}</CardTitle>
@@ -68,7 +70,7 @@ export const Card = ({
         className
       )}
     >
-      <div className="relative z-50 ">
+      <div className="relative z-50 w-[100%] ">
         <div className="p-4 flex flex-col justify-center
         items-center">{children}</div>
       </div>

@@ -5,20 +5,26 @@ import projectData from "../data/project_info.json";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Image from "next/image";
 
+//  {
+//           "title": "YouTube Clone",
+//           "description": "YouTube Clone is a replica of the popular video-sharing platform. The frontend is built using React.js, providing a responsive and interactive user interface. The backend is powered by Node.js and Express.js, with MongoDB as the database, enabling robust data storage and retrieval. Users can create channels, upload, delete, and update videos, as well as like, comment, and share videos. Additionally, users can engage in community posts, fostering interaction and engagement within the platform.",
+//           "image": "/project/youtube.png",
+//           "githubLink": "https://github.com/abuzar2091/Youtube-Fullstack-Clone"
+//         }
 function Project() {
   const featuredProjects = projectData.projects;
 
   return (
-    <div className="py-12 bg-gray-900">
+    <div id="project" className="py-12 bg-gray-900">
       <div className="text-center">
         <h2 className="text-base  text-teal-600 font-semibold tracking-wide uppercase">
-         Learn With Project
+          Learn With Project
         </h2>
         {/* <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
         FEATURED PROJECT
         </p> */}
         <h1 className=" text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 text-center mb-8">
-        FEATURED PROJECT
+          FEATURED PROJECT
         </h1>
       </div>
       <div className="mt-10 mx-8">
@@ -27,13 +33,13 @@ function Project() {
             <div key={project.id} className="flex justify-center">
               <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                 <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
-                <Image
-           src={project.image}
-          alt="project"
-          height="600"
-          width="600"
-          className="object-contain"
-        />
+                  <Image
+                    src={project.image}
+                    alt="project"
+                    height="600"
+                    width="600"
+                    className="object-contain"
+                  />
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                     {project.title}
                   </p>
@@ -49,7 +55,7 @@ function Project() {
       </div>
       <div className="mt-20 text-center">
         <Link
-          href={"/courses"}
+          href={"https://github.com/abuzar2091"}
           className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
         >
           View All Projects

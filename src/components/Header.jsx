@@ -7,10 +7,10 @@ import Link from "next/link";
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div 
+    <div
       className={cn(
         "fixed  top-10 inset-x-0 max-w-2xl sm:mx-auto mx-4 z-50  ",
-        className
+        className,
       )}
     >
       <Menu setActive={setActive}>
@@ -21,10 +21,20 @@ function Navbar({ className }) {
             item="Home"
           ></MenuItem>
         </Link>
-       
+
         <Link href={"#about-me"} className="hover:opacity-50">
-          <MenuItem setActive={setActive} active={active} item="About me">
-          </MenuItem>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="About me"
+          ></MenuItem>
+        </Link>
+        <Link href={"#project"} className="hover:opacity-50">
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Project"
+          ></MenuItem>
         </Link>
         <Link href={"#services"} className="hover:opacity-50">
           <MenuItem
@@ -46,4 +56,3 @@ function Navbar({ className }) {
 }
 
 export default Navbar;
-

@@ -16,33 +16,43 @@ export function AboutMeLampEffect() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center font-medium tracking-tight text-transparent "
       >
-        Hello there! I&apos;m Abuzar, currently on the exhilarating journey of
-          pursuing a B.Tech in Computer Engineering from NIT Kurukshetra. As a
-          passionate full-stack web developer, I immerse myself in the dynamic
-          world of technology, specializing in the versatile MERN stack.
-        
-       <br/>
-          I&apos;m always excited to learn new stuff, especially when it comes to
-          technology. I&apos;m the kind of person who can handle a bunch of tasks
-          without breaking a sweat, and I&apos;m really good at managing my time.
-          <br />
-          I&apos;m full of energy and always looking for ways to learn and grow. I
-          love coming up with new ideas and trying them out. And even though I
-          take my work seriously, I also know how to have a good laugh!
+        Hello! I&apos;m Abuzar, a Full Stack Developer currently working at
+        ICICI Bank, where I contribute to building secure and scalable
+        enterprise applications.
+        <br />
+        <br />
+        I specialize in React.js for frontend development and FastAPI (Python)
+        and Node.js for backend and integration layers. My work involves
+        developing admin dashboards, implementing role-based access control
+        (RBAC), and designing secure API architectures.
+        <br />
+        <br />
+        I have hands-on experience in building systems with a well-structured
+        architecture, including frontend, integration layer, and backend,
+        ensuring performance, security, and scalability. I work with PostgreSQL
+        for efficient data management and have experience in cloud deployment,
+        environment configurations, and YAML-based setups.
+        <br />
+        <br />
+        I focus on writing clean, maintainable code and building systems that
+        solve real-world problems. I am continuously learning and exploring
+        advanced topics such as system design, performance optimization, and
+        AI-driven applications.
+        <br />
+        <br />
+        I&apos;m always open to new opportunities where I can contribute, learn,
+        and grow as a developer.
       </motion.h1>
     </LampContainer>
   );
 }
 
-export const LampContainer = ({
-  children,
-  className,
-}) => {
+export const LampContainer = ({ children, className }) => {
   return (
     <div
       className={cn(
         "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
-        className
+        className,
       )}
     >
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
@@ -59,8 +69,8 @@ export const LampContainer = ({
           }}
           className="absolute inset-auto right-1/2 h-56 overflow-visible w-[30rem] bg-gradient-conic from-cyan-500 via-transparent to-transparent text-white [--conic-position:from_70deg_at_center_top]"
         >
-          <div className="absolute  w-[100%] left-0 bg-slate-950 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]"/>
-          <div className="absolute w-40 h-[100%] left-0 bg-slate-950  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]"/>
+          <div className="absolute  w-[100%] left-0 bg-slate-950 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+          <div className="absolute w-40 h-[100%] left-0 bg-slate-950  bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
@@ -85,7 +95,7 @@ export const LampContainer = ({
           initial={{ width: "8rem" }}
           whileInView={{ width: "16rem" }}
           transition={{
-            delay: .3,
+            delay: 0.3,
             duration: 0.8,
             ease: "easeInOut",
           }}
@@ -111,4 +121,3 @@ export const LampContainer = ({
     </div>
   );
 };
-

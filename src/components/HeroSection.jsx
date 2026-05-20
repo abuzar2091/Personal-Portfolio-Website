@@ -80,7 +80,7 @@ function HeroSection() {
         <div className="">
           <div className="border-4  rounded-full">
             <Image
-              src="/abuzar-pic.jpg"
+              src="/abuzar-pic.png"
               height={52}
               width={52}
               alt="abuzarali"
